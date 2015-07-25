@@ -1,3 +1,9 @@
+Files Included
+=======================
+- Codebook.md - Codebook for this project
+- README.md - README file for this project
+- run_analysis.R - R script that tidy's UCSI data
+
 Libraries Used
 =======================
 - data.table
