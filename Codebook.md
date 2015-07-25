@@ -97,19 +97,8 @@ The run_analysis.R script included in this project transforms the raw data as fo
 1. Merges the training (subject_train.txt, y_train.txt, X_train.txt) and the test (subject_test.txt, y_test.txt, X_test.txt) sets to create one data set (data).
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set (mapping taken from activity_labels.txt)
-- 1 = WALKING
-- 2 = WALKING_UPSTAIRS
-- 3 = WALKING_DOWNSTAIRS
-- 4 = SITTING
-- 5 = STANDING
-- 6 = LAYING
-4. Appropriately labels the data set with descriptive variable names.  By replacing the following:
-- t = Time
-- f = Frequency
-- Acc = Accelerometer
-- Gyro = Gyroscope
-- Mag = Magnitude
-- BodyBody = Body
+(1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING_DOWNSTAIRS, 4 = SITTING, 5 = STANDING, 6 = LAYING)
+4. Appropriately labels the data set with descriptive variable names.  By replacing the following: (t = Time, f = Frequency, Acc = Accelerometer, Gyro = Gyroscope, Mag = Magnitude, BodyBody = Body)
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject (tidy.csv).
 
 
