@@ -11,6 +11,180 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
+Transformed Data in tidy.csv file
+===================
+
+Note: The tidy.csv file contains the mean and standard deviation averages for each activity performed by a test subject.  For information on the raw data, please see the Raw Data section listed below.
+
+These signals were used to estimate variables of the measurement vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and are each listed in separate columns in the tidy.csv sheet.  The definitions are:
+
+<table>
+<tr>
+<th>
+Measurement
+</th>
+<th>
+Definition
+</th>
+</tr>
+<tr>
+<td>
+TimeBodyAccelerometer-XYZ
+</td>
+<td>
+Time measurement for the body component of the accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeGravityAccelerometer-XYZ
+</td>
+<td>
+Time meaurement for the gravity component of the accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyAccelerometerJerk-XYZ
+</td>
+<td>
+Time measurement for the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyGyroscope-XYZ
+</td>
+<td>
+Time measurement for the body component of the gyroscope sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyGyroscopeJerk-XYZ
+</td>
+<td>
+Time measurement for the body component's linear acceleration and angular velocity for the gyroscope sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyAccelerometerMagnitude
+</td>
+<td>
+Time measurement for the magnitude of the body component's accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeGravityAccelerometerMagnitude
+</td>
+<td>
+Time measurement for the magnitude of gravity's component's accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyAccelerometerJerkMagnitude
+</td>
+<td>
+Time measurement for the magnitude of the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyGyroscopeMagnitude
+</td>
+<td>
+Time measurement for the magnitude of the the body component's gyroscope sensor signal
+</td>
+</tr>
+<tr>
+<td>
+TimeBodyGyroscopeJerkMagnitude
+</td>
+<td>
+Time measurement for the magnitude of the body component's linear acceleration and angular velocity for the gyroscope sensor signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyAccelerometer-XYZ
+</td>
+<td>
+Frequency measurement for the body component accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyAccelerometerJerk-XYZ
+</td>
+<td>
+Frequency measurment for the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyGyroscope-XYZ
+</td>
+<td>
+Frequency measurement for the body component gyroscope sensor signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyAccelerometerMagnitude
+</td>
+<td>
+Frequency measurement for the magnitude of the body component's accelerometer signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyAccelerometerJerkMagnitude
+</td>
+<td>
+Frequency measurement for the magnitude of the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyGyroscopeMagnitude
+</td>
+<td>
+Frequency measurement for the magnitude of the body component's gyroscope sensor signal
+</td>
+</tr>
+<tr>
+<td>
+FrequencyBodyGyroscopeJerkMagnitude
+</td>
+<td>
+Frequency measurement for the magnitude of the body component's linear acceleration and angular velocity for the gyroscope sensor signal
+</td>
+</tr>
+</table>
+
+The set of variables that were estimated from these signals are: 
+
+- mean(): Mean value
+- std(): Standard deviation
+
+
+## Raw Data Tranformation
+
+The run_analysis.R script included in this project transforms the raw data as follows:
+
+1. Merges the training (subject_train.txt, y_train.txt, X_train.txt) and the test (subject_test.txt, y_test.txt, X_test.txt) sets to create one data set (data).
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set (mapping taken from activity_labels.txt)
+(1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING_DOWNSTAIRS, 4 = SITTING, 5 = STANDING, 6 = LAYING)
+4. Appropriately labels the data set with descriptive variable names.  By replacing the following: (t = Time, f = Frequency, Acc = Accelerometer, Gyro = Gyroscope, Mag = Magnitude, BodyBody = Body)
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject (tidy.csv).
+
+
+
 Raw Data in UCI Har Dataset Directory
 ===================
 
@@ -118,47 +292,6 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-Transformed Data in tidy.csv file
-===================
-
-Note: The tidy.csv file contains the mean and standard deviation averages for each activity performed by a test subject.  
-
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and the following are
-
-* TimeBodyAccelerometer-XYZ - Time measurement for the body component of the accelerometer sensor signal
-* TimeGravityAccelerometer-XYZ - Time meaurement for the gravity component of the accelerometer sensor signal
-* TimeBodyAccelerometerJerk-XYZ - Time measurement for the body component's linear acceleration and angular velocity for the accelerometer sensor signal
-* TimeBodyGyroscope-XYZ - Time measurement for the body component of the gyroscope sensor signal
-* TimeBodyGyroscopeJerk-XYZ - Time measurement for the body component's linear acceleration and angular velocity for the gyroscope sensor signal
-* TimeBodyAccelerometerMagnitude - Time measurement for the magnitude of the body component's accelerometer sensor signal's 
-* TimeGravityAccelerometerMagnitude - Time measurement for the magnitude of gravity's component's accelerometer sensor signal's
-* TimeBodyAccelerometerJerkMagnitude - Time measurement for the magnitude of the body component's linear acceleration and angular velocity for the accelerometer sensor signal
-* TimeBodyGyroscopeMagnitude - Time measurement for the magnitude of the the body component's gyroscope sensor signal
-* TimeBodyGyroscopeJerkMagnitude - Time measurement for the magnitude of the body component's linear acceleration and angular velocity for the gyroscope sensor signal
-* FrequencyBodyAccelerometer-XYZ - Frequency measurement for the body component accelerometer sensor signal
-* FrequencyBodyAccelerometerJerk-XYZ - Frequency measurment for the body component's linear acceleration and angular velocity for the accelerometer sensor signal
-* FrequencyBodyGyroscope-XYZ - Frequency measurement for the body component gyroscope sensor signal
-* FrequencyBodyAccelerometerMagnitude - Frequency measurement for the magnitude of the body component's accelerometer signal
-* FrequencyBodyAccelerometerJerkMagnitude - Frequency measurement for the magnitude of the body component's linear acceleration and angular velocity for the accelerometer sensor signal
-* FrequencyBodyGyroscopeMagnitude - Frequency measurement for the magnitude of the body component's gyroscope sensor signal
-* FrequencyBodyGyroscopeJerkMagnitude - Frequency measurement for the magnitude of the body component's linear acceleration and angular velocity for the gyroscope sensor signal
-
-The set of variables that were estimated from these signals are: 
-
-- mean(): Mean value
-- std(): Standard deviation
-
-
-## Raw Data Tranformation
-
-The run_analysis.R script included in this project transforms the raw data as follows:
-
-1. Merges the training (subject_train.txt, y_train.txt, X_train.txt) and the test (subject_test.txt, y_test.txt, X_test.txt) sets to create one data set (data).
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set (mapping taken from activity_labels.txt)
-(1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING_DOWNSTAIRS, 4 = SITTING, 5 = STANDING, 6 = LAYING)
-4. Appropriately labels the data set with descriptive variable names.  By replacing the following: (t = Time, f = Frequency, Acc = Accelerometer, Gyro = Gyroscope, Mag = Magnitude, BodyBody = Body)
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject (tidy.csv).
 
 
 
