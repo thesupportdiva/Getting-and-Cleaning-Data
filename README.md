@@ -1,7 +1,7 @@
 Libraries Used
 =======================
-library(data.table)
-library(dplyr)
+- data.table
+- dplyr
 
 Steps to Use
 =======================
