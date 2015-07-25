@@ -1,7 +1,7 @@
 #Set directory and warning values
 options( warn = -1 )
 
-directory <- "Donna_Project"
+directory <- "Clean_Data"
 if (!file.exists(directory)){
   dir.create(directory)      
 }
@@ -69,4 +69,4 @@ data <- aggregate(. ~Subject + Activity, data, mean)
 View(data)
 
 #Create a tidy.csv file that contains the mean data for subject and activity
-write.table(data,file="tidy.csv",sep=",",row.names = FALSE)
+write.table(data,file="tidy.txt",sep=",",row.names = FALSE)
