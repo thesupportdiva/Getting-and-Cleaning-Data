@@ -10,7 +10,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
-##Data
+##Data in tidy.csv file
 Note: The tidy.csv file contains the mean and standard deviation averages for each activity performed by a test subject.  For more detailed information on the raw data, please read the README.txt file in the UCI HAR Dataset directory.
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TimeBodyAccelerometer-XYZ and TimeGravityAccelerometer-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -42,8 +42,8 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+- mean(): Mean value
+- std(): Standard deviation
 
 ## Raw data in the UCI HAR Dataset Directory
 
@@ -89,6 +89,28 @@ The following files are available for the train and test data. Their description
 - Each feature vector is a row on the text file.
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
+
+## Raw Data Tranformation
+
+The run_analysis.R script included in this project transforms the raw data as follows:
+
+1. Merges the training (subject_train.txt, y_train.txt, X_train.txt) and the test (subject_test.txt, y_test.txt, X_test.txt) sets to create one data set (data).
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set (mapping taken from activity_labels.txt)
+- 1 = WALKING
+- 2 = WALKING_UPSTAIRS
+- 3 = WALKING_DOWNSTAIRS
+- 4 = SITTING
+- 5 = STANDING
+- 6 = LAYING
+4. Appropriately labels the data set with descriptive variable names.  By replacing the following:
+- t = Time
+- f = Frequency
+- Acc = Accelerometer
+- Gyro = Gyroscope
+- Mag = Magnitude
+- BodyBody = Body
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject (tidy.csv).
 
 
 
