@@ -125,23 +125,23 @@ Note: The tidy.csv file contains the mean and standard deviation averages for ea
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and the following are
 
-* TimeBodyAccelerometer-XYZ - Time measurement for the body's accelerometer sensor signal
-* TimeGravityAccelerometer-XYZ - Time meaurement for gravity's accelerometer sensor signal
-* TimeBodyAccelerometerJerk-XYZ - Time measurment for the body's linear acceleration and angular velocity for the accelerometer sensor signal
-* TimeBodyGyroscope-XYZ - Time measurement for the body's gyroscope sensor signal
-* TimeBodyGyroscopeJerk-XYZ - Time measurement for the body's linear acceleration and angular velocity for the gyroscope sensor signal
-* TimeBodyAccelerometerMagnitude - Time measurement for the magnitude of the body's accelerometer sensor signal's 
-* TimeGravityAccelerometerMagnitude - Time measurement for the magnitude of gravity's accelerometer sensor signal's 
-* TimeBodyAccelerometerJerkMagnitude - Time measurement for the magnitude of the body's linear acceleration and angular velocity for the accelerometer sensor signal
-* TimeBodyGyroscopeMagnitude - Time measurement for the magnitude of the magnitude of the body's gyroscope sensor signal
-* TimeBodyGyroscopeJerkMagnitude - Time measurement for the magnitude of the body's linear acceleration and angular velocity for the gyroscope sensor signal
-* FrequencyBodyAccelerometer-XYZ - Frequency measurement for the body's accelerometer sensor signal
-* FrequencyBodyAccelerometerJerk-XYZ - Frequency measurment for the body's linear acceleration and angular velocity for the accelerometer sensor signal
-* FrequencyBodyGyroscope-XYZ - Frequency measurement for the body's gyroscope sensor signal
-* FrequencyBodyAccelerometerMagnitude - Frequency measurement for the magnitude of the body's accelerometer signal
-* FrequencyBodyAccelerometerJerkMagnitude - Frequency measurement for the magnitude of the body's linear acceleration and angular velocity for the accelerometer sensor signal
-* FrequencyBodyGyroscopeMagnitude - Frequency measurement for the magnitude of the magnitude of the body's gyroscope sensor signal
-* FrequencyBodyGyroscopeJerkMagnitude - Frequency measurement for the magnitude of the body's linear acceleration and angular velocity for the gyroscope sensor signal
+* TimeBodyAccelerometer-XYZ - Time measurement for the body component of the accelerometer sensor signal
+* TimeGravityAccelerometer-XYZ - Time meaurement for the gravity component of the accelerometer sensor signal
+* TimeBodyAccelerometerJerk-XYZ - Time measurement for the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+* TimeBodyGyroscope-XYZ - Time measurement for the body component of the gyroscope sensor signal
+* TimeBodyGyroscopeJerk-XYZ - Time measurement for the body component's linear acceleration and angular velocity for the gyroscope sensor signal
+* TimeBodyAccelerometerMagnitude - Time measurement for the magnitude of the body component's accelerometer sensor signal's 
+* TimeGravityAccelerometerMagnitude - Time measurement for the magnitude of gravity's component's accelerometer sensor signal's
+* TimeBodyAccelerometerJerkMagnitude - Time measurement for the magnitude of the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+* TimeBodyGyroscopeMagnitude - Time measurement for the magnitude of the the body component's gyroscope sensor signal
+* TimeBodyGyroscopeJerkMagnitude - Time measurement for the magnitude of the body component's linear acceleration and angular velocity for the gyroscope sensor signal
+* FrequencyBodyAccelerometer-XYZ - Frequency measurement for the body component accelerometer sensor signal
+* FrequencyBodyAccelerometerJerk-XYZ - Frequency measurment for the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+* FrequencyBodyGyroscope-XYZ - Frequency measurement for the body component gyroscope sensor signal
+* FrequencyBodyAccelerometerMagnitude - Frequency measurement for the magnitude of the body component's accelerometer signal
+* FrequencyBodyAccelerometerJerkMagnitude - Frequency measurement for the magnitude of the body component's linear acceleration and angular velocity for the accelerometer sensor signal
+* FrequencyBodyGyroscopeMagnitude - Frequency measurement for the magnitude of the body component's gyroscope sensor signal
+* FrequencyBodyGyroscopeJerkMagnitude - Frequency measurement for the magnitude of the body component's linear acceleration and angular velocity for the gyroscope sensor signal
 
 The set of variables that were estimated from these signals are: 
 
