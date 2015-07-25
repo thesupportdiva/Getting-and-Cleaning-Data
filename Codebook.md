@@ -70,23 +70,23 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
@@ -121,27 +121,27 @@ The complete list of variables of each feature vector is available in 'features.
 Transformed Data in tidy.csv file
 ===================
 
-Note: The tidy.csv file contains the mean and standard deviation averages for each activity performed by a test subject.  For more detailed information on the raw data, please read the README.txt file in the UCI HAR Dataset directory.
+Note: The tidy.csv file contains the mean and standard deviation averages for each activity performed by a test subject.  
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and the following are
 
-* TimeBodyAccelerometer-XYZ
-* TimeGravityAccelerometer-XYZ
-* TimeBodyAccelerometerJerk-XYZ
-* TimeBodyGyroscope-XYZ
-* TimeBodyGyroscopeJerk-XYZ
-* TimeBodyAccelerometerMagnitude
-* TimeGravityAccelerometerMagnitude
-* TimeBodyAccelerometerJerkMagnitude
-* TimeBodyGyroscopeMagnitude
-* TimeBodyGyroscopeJerkMagnitude
-* FrequencyBodyAccelerometer-XYZ
-* FrequencyBodyAccelerometerJerk-XYZ
-* FrequencyBodyGyroscope-XYZ
-* FrequencyBodyAccelerometerMagnitude
-* FrequencyBodyAccelerometerJerkMagnitude
-* FrequencyBodyGyroscopeMagnitude
-* FrequencyBodyGyroscopeJerkMagnitude
+* TimeBodyAccelerometer-XYZ - Time measurement for the body's accelerometer sensor signal
+* TimeGravityAccelerometer-XYZ - Time meaurement for gravity's accelerometer sensor signal
+* TimeBodyAccelerometerJerk-XYZ - Time measurment for the body's linear acceleration and angular velocity for the accelerometer sensor signal
+* TimeBodyGyroscope-XYZ - Time measurement for the body's gyroscope sensor signal
+* TimeBodyGyroscopeJerk-XYZ - Time measurement for the body's linear acceleration and angular velocity for the gyroscope sensor signal
+* TimeBodyAccelerometerMagnitude - Time measurement for the magnitude of the body's accelerometer sensor signal's 
+* TimeGravityAccelerometerMagnitude - Time measurement for the magnitude of gravity's accelerometer sensor signal's 
+* TimeBodyAccelerometerJerkMagnitude - Time measurement for the magnitude of the body's linear acceleration and angular velocity for the accelerometer sensor signal
+* TimeBodyGyroscopeMagnitude - Time measurement for the magnitude of the magnitude of the body's gyroscope sensor signal
+* TimeBodyGyroscopeJerkMagnitude - Time measurement for the magnitude of the body's linear acceleration and angular velocity for the gyroscope sensor signal
+* FrequencyBodyAccelerometer-XYZ - Frequency measurement for the body's accelerometer sensor signal
+* FrequencyBodyAccelerometerJerk-XYZ - Frequency measurment for the body's linear acceleration and angular velocity for the accelerometer sensor signal
+* FrequencyBodyGyroscope-XYZ - Frequency measurement for the body's gyroscope sensor signal
+* FrequencyBodyAccelerometerMagnitude - Frequency measurement for the magnitude of the body's accelerometer signal
+* FrequencyBodyAccelerometerJerkMagnitude - Frequency measurement for the magnitude of the body's linear acceleration and angular velocity for the accelerometer sensor signal
+* FrequencyBodyGyroscopeMagnitude - Frequency measurement for the magnitude of the magnitude of the body's gyroscope sensor signal
+* FrequencyBodyGyroscopeJerkMagnitude - Frequency measurement for the magnitude of the body's linear acceleration and angular velocity for the gyroscope sensor signal
 
 The set of variables that were estimated from these signals are: 
 
