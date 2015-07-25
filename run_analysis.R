@@ -43,13 +43,13 @@ colnames(activity) <- c("Activity")
 colnames(features) <- featureLabels$V2
 
 #Combine subject, activity and features into final data set
-mergeData <- cbind(activity, subject)
-data <- cbind(mergeData, features)
+activitySubjectData <- cbind(activity, subject)
+data <- cbind(activitySubjectData, features)
 
 #Extract only the mean and standard deviation columns for the final data set.
-wantedFeatures <-featureLabels$V2[grep("mean|std", featureLabels$V2)]
-selectedNames <- c("Activity", "Subject", as.character(wantedFeatures))
-data <- subset(data, select = selectedNames)
+meanStdColumns <-featureLabels$V2[grep("mean|std", featureLabels$V2)]
+selectedData <- c("Activity", "Subject", as.character(meanStdColumns))
+data <- subset(data, select = selectedData)
 
 #Use descriptive activity names to name the activities in the data set
 data$Activity <- factor(data$Activity,levels=activityLabels$V1,labels=activityLabels$V2)
