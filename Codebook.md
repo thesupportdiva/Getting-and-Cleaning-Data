@@ -172,7 +172,8 @@ The set of variables that were estimated from these signals are:
 - std(): Standard deviation
 
 
-## Raw Data Tranformation
+Raw Data Tranformation (into tidy.csv)
+====================================
 
 The run_analysis.R script included in this project transforms the raw data as follows:
 
