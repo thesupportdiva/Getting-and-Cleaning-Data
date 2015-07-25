@@ -67,5 +67,5 @@ data <- aggregate(. ~Subject + Activity, data, mean)
 #Display the resulting data in R 
 View(data)
 
-#Create a tidy.csv file that contains the mean data for subject and activity
+#Create a tidy.txt file that contains the mean data for subject and activity
 write.table(data,file="tidy.txt",sep=",",row.names = FALSE)
