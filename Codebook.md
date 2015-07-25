@@ -17,7 +17,7 @@ Transformed Data in tidy.txt file
 Note: The tidy.txt file contains the mean and standard deviation averages for each activity performed by a test subject.  For information on the raw data, please see the <b>Raw Data in UCI Har Dataset Directory</b> section listed below.
 
 These signals were used to estimate variables of the measurement vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and are each listed in separate columns in the tidy.csv sheet.  The definitions are:
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and are each listed in separate columns in the tidy.txt sheet.  The definitions are:
 
 <table>
 <tr>
