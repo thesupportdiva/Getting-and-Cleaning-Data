@@ -43,8 +43,7 @@ colnames(activity) <- c("Activity")
 colnames(features) <- featureLabels$V2
 
 #Combine subject, activity and features into final data set
-activitySubjectData <- cbind(activity, subject)
-data <- cbind(activitySubjectData, features)
+data <- cbind(activity, subject, features)
 
 #Extract only the mean and standard deviation columns for the final data set.
 meanStdColumns <-featureLabels$V2[grep("mean|std", featureLabels$V2)]
