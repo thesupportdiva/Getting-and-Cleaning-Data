@@ -11,10 +11,10 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
-Transformed Data in tidy.csv file
+Transformed Data in tidy.txt file
 ===================
 
-Note: The tidy.csv file contains the mean and standard deviation averages for each activity performed by a test subject.  For information on the raw data, please see the <b>Raw Data in UCI Har Dataset Directory</b> section listed below.
+Note: The tidy.txt file contains the mean and standard deviation averages for each activity performed by a test subject.  For information on the raw data, please see the <b>Raw Data in UCI Har Dataset Directory</b> section listed below.
 
 These signals were used to estimate variables of the measurement vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions and are each listed in separate columns in the tidy.csv sheet.  The definitions are:
