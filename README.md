@@ -15,7 +15,7 @@ If you do not have these installed, you will need to run the following:
 Steps to Use
 =======================
 1. Clone this repo ```git clone https://github.com/thesupportdiva/Getting-and-Cleaning-Data.git```
-2. Set your working directory in R to the correct filepath you want to use before running this program this should be the ```Getting-and-Cleaning-Data``` directory you've just cloned from my Git repo - ```setwd("your filepath to Getting-and-Cleaning-Data")```
+2. Set your working directory in R to the correct filepath you want to use before running this program. This filepath should be to the ```Getting-and-Cleaning-Data``` directory you've just cloned from my Git repo - ```setwd("your filepath to Getting-and-Cleaning-Data")```
 2. Run ```source("run_analysis.R")```
 3. This will create a Clean_Data directory in your set file path, download the needed raw data, display the merged and transformed data using View in R and then create a tidy.txt file in the Clean_Data directory.
 4. To read the CSV file in R use ```data <- read.csv("<filepath>/tidy.txt", header = TRUE, sep=",")```
