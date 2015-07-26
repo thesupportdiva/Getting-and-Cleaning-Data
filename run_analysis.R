@@ -68,4 +68,4 @@ data <- aggregate(. ~Subject + Activity, data, mean)
 View(data)
 
 #Create a tidy.txt file that contains the mean data for subject and activity
-write.table(data,file="tidy.txt",sep=",",row.names = FALSE)
+write.table(data,file="tidy.txt", row.names = FALSE)
