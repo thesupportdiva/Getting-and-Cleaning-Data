@@ -23,4 +23,4 @@ Steps to Use
 
 Data Transformation & Definitions
 =======================
-Explanation of the data transformation and definitions is included in the <a href="https://github.com/thesupportdiva/Getting-and-Cleaning-Data/blob/master/Codebook.md">Codebook.md</a> file.
+Explanation of the data transformation and variable definitions are included in the <a href="https://github.com/thesupportdiva/Getting-and-Cleaning-Data/blob/master/Codebook.md">Codebook.md</a> file.
