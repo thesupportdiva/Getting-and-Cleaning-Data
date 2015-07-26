@@ -1,5 +1,5 @@
 ---
-title: "Codebook template"
+title: "Codebook for Getting and Cleaning Data project"
 author: "Donna McGahan"
 date: "7/24/2015"
 ---
