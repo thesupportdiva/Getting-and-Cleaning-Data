@@ -20,3 +20,7 @@ Steps to Use
 2. In R, run ```source("run_analysis.R")```
 3. This will create a Clean_Data directory inside the ```Getting-and-Cleaning-Data``` directory , download the needed raw data, display the merged and transformed data using View in R and then create a tidy.txt file in the Clean_Data directory. 
 4. To read the tidy.txt file in R use ```finalData <- read.table("<filepath  to Clean_Data>/tidy.txt", header=TRUE)```.  You can then view this in R using ```View(finalData)```.
+
+Data Transformation & Definitions
+=======================
+Explanation of the data transformation and definitions is included in the <a href="https://github.com/thesupportdiva/Getting-and-Cleaning-Data/blob/master/Codebook.md">Codebook.md</a> file.
