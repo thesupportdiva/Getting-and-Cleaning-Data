@@ -30,6 +30,23 @@ Definition
 </tr>
 <tr>
 <td>
+Subject
+</td>
+<td>
+Test subject that performed the activity.
+</td>
+</tr>
+<tr>
+<td>
+Activity
+</td>
+<td>
+The activity performed by the test subject.
+</td>
+</tr>
+</tr>
+<tr>
+<td>
 TimeBodyAccelerometer-XYZ
 </td>
 <td>
